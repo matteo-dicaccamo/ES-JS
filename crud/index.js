@@ -145,5 +145,6 @@ const updateById = (idToUpdate, newObjToUpdate) => {
     }
 
 }
+
 updateById(1, objToUpdate);
 console.log(data);
