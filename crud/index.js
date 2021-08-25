@@ -102,7 +102,6 @@ const deleteById = id => {
         }
         newData.push(data[i]);
     }
-
     data = newData;
 };
 // deleteById(2);
@@ -134,7 +133,6 @@ objToUpdate = {
 
 const updateById = (idToUpdate, newObjToUpdate) => {
     // let personToUpdate = getById(idToUpdate);
-
     for (const personToUpdate of data) {
         if (personToUpdate.id === idToUpdate) {
             personToUpdate.name = newObjToUpdate.name;
