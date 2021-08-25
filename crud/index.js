@@ -120,7 +120,7 @@ const orderUserDesc = () => data.sort((a, b) => b.age - a.age);
 // ordinare utenti (ascendente)
 const orderUserAsc = () => data.sort((a, b) => a.age - b.age);
 // orderUserAsc();
-// console.log(data);
+// console.log(data);  
 
 // //UPDATE obj by id from new obj
 objToUpdate = {
