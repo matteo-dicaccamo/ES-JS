@@ -2,7 +2,6 @@
 // in questa API https://docs.thecatapi.com/
 
 async function getImg() {
-
     const response = await fetch('https://api.thecatapi.com/v1/images/search');
     const data = await response.json();
 
@@ -16,4 +15,4 @@ async function getImg() {
 
 }
 
-document.getElementById('button').addEventListener('click', getImg());
+document.getElementById('button').addEventListener('click', getImg);
