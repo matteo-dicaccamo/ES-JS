@@ -8,14 +8,31 @@
     <title>API</title>
 
     <style>
-        #wrapper-container {
+        main {
+            height: calc(100vh - 200px);
             width: 600px;
-            margin: 20px auto;
+            margin: 50px auto;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+        
+        #wrapper-container {
+            width: inherit;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         
         #wrapper-container img {
-            width: 100%;
-            height: auto;
+            max-height: 100%;
+            margin: 0 auto;
+        }
+        
+        #button {
+            display: block;
+            margin: 0 auto;
         }
     </style>
 
@@ -23,11 +40,13 @@
 </head>
 
 <body>
+
+    <main>
+        <div id="wrapper-container">
+
+        </div>
+    </main>
     <input id="button" type="button" value="GetCat">
-
-    <div id="wrapper-container">
-
-    </div>
 
     <script src="index.js"></script>
 </body>
