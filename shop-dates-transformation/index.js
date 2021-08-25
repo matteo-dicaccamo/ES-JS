@@ -34,6 +34,7 @@ const store = {
     }
 };
 
+
 for (const day in store.availability) {
     if (store.availability[day]) {
         store.availability[day] = {
