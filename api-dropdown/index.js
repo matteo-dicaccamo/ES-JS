@@ -8,33 +8,30 @@
 
 // <!-- https://cataas.com/api/tags -->
 
-async function getTags() {
+// start application
 
+
+async function getTags() {
     const tags = await fetch('https://cataas.com/api/tags');
     const result = await tags.json();
-
     const newArray = result.slice(4, 9);
-
     const arrayTags = [...newArray, ...result.slice(14, 19)];
-
-    // console.log(arrayTags);
-
-    const container = document.getElementById('dropdown');
+    const optionsContainer = document.getElementById('dropdown');
 
     for (let i = 0; i < arrayTags.length; ++i) {
         const option = document.createElement('option');
         option.innerText = arrayTags[i];
-        container.append(option);
+        optionsContainer.append(option);
     }
 
+    const imgByTag = document.createElement('img');
+    document.getElementById('img-container').append(imgByTag);
 
-    container.addEventListener('change', () => {
-
-        console.log(container.value);
-
+    optionsContainer.addEventListener('change', () => {
+        const valueSelected = optionsContainer.value;
+        imgByTag.src = `https://cataas.com/cat/${valueSelected}`;
+        imgByTag.alt = 'Foto di gatto';
     })
-
-
 }
 
 getTags();

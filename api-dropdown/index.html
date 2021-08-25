@@ -6,15 +6,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>API-Dropdown</title>
+
+    <style>
+        #img-container {
+            margin: 50px auto;
+            height: 500px;
+        }
+        
+        img {
+            max-height: 100%;
+        }
+    </style>
 </head>
 
 <body>
 
-
+    <label for="dropdown">Cat pictures:</label>
     <select id="dropdown">
-
+        <option value="select" disabled selected>Select...</option>
     </select>
+    <div id="img-container">
+
+    </div>
 
     <script src="index.js"></script>
 </body>
