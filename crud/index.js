@@ -102,7 +102,6 @@ const deleteById = id => {
         }
         newData.push(data[i]);
     }
-
     data = newData;
 };
 // deleteById(2);
@@ -121,7 +120,7 @@ const orderUserDesc = () => data.sort((a, b) => b.age - a.age);
 // ordinare utenti (ascendente)
 const orderUserAsc = () => data.sort((a, b) => a.age - b.age);
 // orderUserAsc();
-// console.log(data);
+// console.log(data);  
 
 // //UPDATE obj by id from new obj
 objToUpdate = {
@@ -134,7 +133,6 @@ objToUpdate = {
 
 const updateById = (idToUpdate, newObjToUpdate) => {
     // let personToUpdate = getById(idToUpdate);
-
     for (const personToUpdate of data) {
         if (personToUpdate.id === idToUpdate) {
             personToUpdate.name = newObjToUpdate.name;
@@ -147,5 +145,6 @@ const updateById = (idToUpdate, newObjToUpdate) => {
     }
 
 }
+
 updateById(1, objToUpdate);
 console.log(data);
