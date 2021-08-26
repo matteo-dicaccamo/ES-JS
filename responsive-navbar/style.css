@@ -13,7 +13,7 @@
     --fr-navbar: #fff;
 }
 
-.fa-bars {
+.checkbtn {
     display: none;
 }
 
@@ -145,10 +145,7 @@ li.dropdown {
 }
 
 @media only screen and (max-width: 899px) {
-    body {
-        background-color: red;
-    }
-    .fa-bars {
+    .checkbtn {
         display: block;
         position: absolute;
         right: 20px;
@@ -187,7 +184,7 @@ li.dropdown {
         margin: unset;
     }
     .dropdown-content {
-        min-width: 169px;
+        min-width: 189px;
     }
     #right-navbar {
         position: unset;
