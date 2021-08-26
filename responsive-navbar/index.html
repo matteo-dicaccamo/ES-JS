@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/54a376c143.js" crossorigin="anonymous"></script>
+    <title>Responsive Navbar</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <label class="logo">Navbar</label>
+            <input type="checkbox" id="check" hidden>
+            <label for="check" class="checkbtn">
+                  <i class="fas fa-bars"></i>
+                </label>
+            <div id="menu-container">
+                <div id="left-navbar">
+                    <ul>
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                            <a class="dropbtn" href="#">Dropdown <i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li><a id="disabled-link" href="#">Disabled</a></li>
+                    </ul>
+                </div>
+                <div id="right-navbar">
+                    <input type="text" placeholder="  Search">
+                    <input type="submit" value="Search">
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
