@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: "Times New Roman", Times, serif;
+    background-color: black;
+    color: black;
+    font-size: 1.2rem;
+}
+
+h1 {
+    width: 50vw;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: oblique;
+    padding: 100px;
+    color: red;
+}
+
+body {
+    width: 70vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #e7e7b5;
+    overflow: hidden;
+}
+
+#wrapper-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#questionsNumber-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#questionsNumber-container label {
+    margin-right: 10px;
+}
+
+#quantity {
+    width: 50px;
+    font-size: 1rem;
+}
+
+#category-container {
+    font-size: 1.2rem;
+}
+
+#dropdownCategory {
+    font-size: .8rem;
+}
+
+#typeQuestion,
+#typeAnswer {
+    padding: 10px;
+}
+
+#startQuiz {
+    display: block;
+    width: 120px;
+    height: 40px;
+    text-decoration: underline;
+    margin: 15px auto;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#question {
+    display: none;
+    margin: 30px 0 15px 20px;
+}
+
+#answers-container {
+    display: none;
+    margin: 30px 0 15px 20px;
+}
+
+#answers-container button {
+    padding: 5px;
+}
+
+
+/* da finire ... */
